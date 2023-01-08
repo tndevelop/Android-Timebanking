@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML implementation of Card Layout-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5px"
+    app:cardCornerRadius="5dp"
+    android:nestedScrollingEnabled="false"
+    android:backgroundTint="#00000000"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textview_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:minWidth="250px"
+            android:maxWidth="400px"
+            android:padding="10px"
+            android:text="problem solving"
+            android:textColor="#FFFFFF"></TextView>
+
+        <TextView
+            android:id="@+id/xButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@id/textview_edit"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/white_gray"
+            android:text="x"
+            android:textColor="@color/grey"
+            android:textAlignment="center"
+            android:textSize="12sp"></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

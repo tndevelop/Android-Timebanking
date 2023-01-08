@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Time Banking</string>
+    <string name="edit">Edit</string>
+    <string name="edit_image_buttom">Edit image button</string>
+    <string name="title_activity_main">Time Banking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_offers">Public Offers</string>
+    <string name="menu_advertisements">My Advertisements</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="menu_services">Public Services</string>
+    <string name="menu_pending">Pending Offers</string>
+    <string name="menu_favourites">My Favourites</string>
+    <string name="edit_advertisement">Edit Advertisement</string>
+    <string name="create_advertisement">Create Advertisement</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="user_offers">Public Offers</string>
+    <string name="date_time_format">dd MMM yyyy HH:mm</string>
+    <string name="date_format">dd MMM yyyy</string>
+    <string name="time_format">HH:mm</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="pending">Offer status: pending</string>
+    <string name="accepted">Offer status: accepted</string>
+    <string name="rejected">Offer status: rejected</string>
+    <string name="time_credits_label">Time credits:</string>
+    <string name="login_button">Sign In with Google</string>
+    <string name="login">Login</string>
+
+    <string name="no_offers_message">Oops! It seems there are no offers available that match your criteria</string>
+    <string-array name="sort_by_array">
+        <item>Date and time</item>
+        <item>Title</item>
+        <item>Duration ascending</item>
+        <item>Duration descending</item>
+        <item>Location</item>
+        <item>User name</item>
+        <item>User rating</item>
+    </string-array>
+
+    <string name="welcome">Welcome!</string>
+    <string name="fui_sign_in_with_google">Sign In with Google</string>
+    <string name="oauth_token_error">oauth token error</string>
+    <string name="credentials_error">credenziali errate</string>
+    <string name="firebase_login_error">firebase login error</string>
+    <string name="chat">Chat</string>
+    <string name="favourites">Favourites</string>
+    <string name="offer_details">Offer Details</string>
+    <string name="offer_profile">Profile</string>
+    <string name="offer">"Offer: "</string>
+    <string name="user">"User: "</string>
+    <string name="menu_chats">Chats</string>
+    <string name="chatList">Chats</string>
+    <string name="no_chats_message">You have no chats yet</string>
+    <string name="description_label">Description</string>
+    <string name="accountinfo_label">Account Info</string>
+    <string name="offerinfo_label">Offer Info</string>
+    <string name="restrictions_label">Restrictions</string>
+    <string name="skills_label">Skills</string>
+    <string name="reviews_label">Reviews</string>
+</resources>

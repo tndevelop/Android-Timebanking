@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/serviceItemListFragment">
+
+    <fragment
+        android:id="@+id/timeSlotListFragment"
+        android:name="it.polito.timebanking.fragments.TimeSlotListFragment"
+        android:label="fragment_time_slot_list"
+        tools:layout="@layout/fragment_time_slot_list" >
+        <action
+            android:id="@+id/action_timeSlotListFragment_to_timeSlotDetailsFragment"
+            app:destination="@id/timeSlotDetailsFragment" />
+        <action
+            android:id="@+id/action_timeSlotListFragment_to_timeSlotEditFragment"
+            app:destination="@id/timeSlotEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showProfileFragment"
+        android:name="it.polito.timebanking.fragments.ShowProfileFragment"
+        android:label="ShowProfileFragment">
+        <action
+            android:id="@+id/action_showFragment_to_editFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="it.polito.timebanking.fragments.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@+id/timeSlotDetailsFragment"
+        android:name="it.polito.timebanking.fragments.TimeSlotDetailsFragment"
+        android:label="TimeSlotDetailsFragment" >
+        <action
+            android:id="@+id/action_timeSlotDetailsFragment_to_timeSlotEditFragment"
+            app:destination="@id/timeSlotEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeSlotEditFragment"
+        android:name="it.polito.timebanking.fragments.TimeSlotEditFragment"
+        android:label="TimeSlotEditFragment" />
+    <fragment
+        android:id="@+id/serviceItemListFragment"
+        android:name="it.polito.timebanking.fragments.ServiceItemListFragment"
+        android:label="fragment_service_item_list"
+        tools:layout="@layout/fragment_service_item_list" >
+        <action
+            android:id="@+id/action_serviceItemListFragment_to_userOffersFragment"
+            app:destination="@id/userOffersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userOffersFragment"
+        android:name="it.polito.timebanking.fragments.UserOffersFragment"
+        android:label="UserOffersFragment" >
+        <action
+            android:id="@+id/action_userOffersFragment_to_offerDetailsFragment2"
+            app:destination="@id/offerDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerDetailsFragment2"
+        android:name="it.polito.timebanking.fragments.OfferDetailsFragment"
+        android:label="OfferDetailsFragment" >
+        <action
+            android:id="@+id/action_offerDetailsFragment2_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_offerDetailsFragment2_to_offerProfileFragment"
+            app:destination="@id/offerProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFavouriteFragment"
+        android:name="it.polito.timebanking.fragments.UserFavouriteFragment"
+        android:label="UserFavouriteFragment" >
+        <action
+            android:id="@+id/action_userFavouriteFragment_to_offerDetailsFragment2"
+            app:destination="@id/offerDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="it.polito.timebanking.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/userPendingFragment"
+        android:name="it.polito.timebanking.fragments.UserPendingFragment"
+        android:label="UserPendingFragment" >
+        <action
+            android:id="@+id/action_userPendingFragment_to_offerDetailsFragment2"
+            app:destination="@id/offerDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerProfileFragment"
+        android:name="it.polito.timebanking.fragments.OfferProfileFragment"
+        android:label="OfferProfileFragment" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="it.polito.timebanking.fragments.ChatListFragment"
+        android:label="fragment_chat_list"
+        tools:layout="@layout/fragment_chat_list" >
+        <action
+            android:id="@+id/action_chatListFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+</navigation>

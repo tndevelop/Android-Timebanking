@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id= "@+id/pendingLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id= "@+id/acceptedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accepted TimeSlots"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingBottom="5sp"/>
+
+        <TextView
+            android:id="@+id/noPendingAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No pending time slots to show.. sorry!"
+            android:textSize="20sp"
+            android:visibility="gone" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAccepted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id= "@+id/pendingLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+
+            <TextView
+                android:id= "@+id/requestedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requested TimeSlots"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:paddingBottom="5sp"/>
+
+            <TextView
+                android:id="@+id/noPendingRequested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No pending time slots to show.. sorry!"
+                android:visibility="gone"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewRequested"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

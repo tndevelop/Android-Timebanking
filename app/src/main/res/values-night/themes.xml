@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TimeBanking" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/forest_green</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/sky_blue</item>
+        <item name="colorSecondaryVariant">@color/sky_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/TextView</item>
+
+    </style>
+
+    <style name="TextView" parent="@android:style/Widget.TextView">
+        <item name="android:shadowColor">@color/forest_green</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:paddingRight">5pt</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Widget.MaterialComponents.TimePicker.Display.TextInputEditText">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:background">@color/sky_blue</item>
+        <item name= "android:layout_margin"> 5pt</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+</resources>
